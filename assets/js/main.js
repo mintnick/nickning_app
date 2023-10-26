@@ -111,9 +111,9 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
-			offset: function() {
-				return $header.height() - 2;
-			}
+			// offset: function() {
+			// 	return $header.height() - 2;
+			// }
 		});
 
 	// Tiles.
@@ -185,29 +185,29 @@
 		});
 
 	// Header.
-		if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
+		// if ($banner.length > 0
+		// &&	$header.hasClass('alt')) {
 
-			$window.on('resize', function() {
-				$window.trigger('scroll');
-			});
+		// 	$window.on('resize', function() {
+		// 		$window.trigger('scroll');
+		// 	});
 
-			$window.on('load', function() {
+		// 	$window.on('load', function() {
 
-				$banner.scrollex({
-					bottom:		$header.height() + 10,
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
-				});
+		// 		$banner.scrollex({
+		// 			bottom:		$header.height() + 10,
+		// 			terminate:	function() { $header.removeClass('alt'); },
+		// 			enter:		function() { $header.addClass('alt'); },
+		// 			leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
+		// 		});
 
-				window.setTimeout(function() {
-					$window.triggerHandler('scroll');
-				}, 100);
+		// 		window.setTimeout(function() {
+		// 			$window.triggerHandler('scroll');
+		// 		}, 100);
 
-			});
+		// 	});
 
-		}
+		// }
 
 	// Banner.
 		$banner.each(function() {
