@@ -1,28 +1,53 @@
 <script setup>
+const langs = [
+  {
+    label: 'English',
+    value: 'en'
+  },
+  {
+    label: '简体中文',
+    value: 'zh'
+  }
+];
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="row justify-between">
+
+    <div class="col-2"></div>
+    <div class="col-8 text-center">
+      <h4 class="q-my-md">{{ $t("title") }}</h4>
+      <span>{{ $t("intro") }}</span>
+    </div>
+    <div class="col-2 row items-center text-right">
+      <q-select
+        outlined
+        dense
+        options-dense
+        v-model="$i18n.locale"
+        :options="langs"
+        emit-value
+        map-options
+        @update:model-value="toggle_lang"
+      />
+    </div>
   </div>
+  <hr />
+
+  <h5>{{ $t("download") }}</h5>
+  <ul>
+    <li>1</li>
+    <li>1</li>
+    <li>1</li>
+  </ul>
+  <hr />
+
+  <h5>{{ $t("manual") }}</h5>
+  <hr />
+
+  <h5>{{ $t("video") }}</h5>
+  <hr />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
