@@ -1,18 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVE Settings Manager</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-  <footer class="row justify-center text-body1 items-center">
-    <div class="text-body2">All EVE related materials are property of CCP Games</div>
-    <div>&copy; <a href="https://github.com/mintnick">Nick Ning</a></div>
-    <a href="https://github.com/mintnick/eve-at-draft">GitHub</a>
-  </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVE 设置管理工具</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <h1>EVE 设置管理工具</h1>
+
+  <div class="section">
+    <h2>简介</h2>
+    <p>大部分 EVE 玩家都有多个账号和角色，这个工具可以让玩家一键同步所有账号和角色的设置，包括界面布局、总览、快捷键等。</p>
+    <p>本工具不违反任何 CCP Games 的规定，其实现原理是：</p>
+    <ul>
+      <li>每一个登录过的角色和账号，在本地会产生配置文件，下次登录时读取对应的游戏内设置</li>
+      <li>通过复制、粘贴、重命名配置文件的方式，玩家可以让多个角色使用一样的设置文件，省去了手动调整每个角色的麻烦</li>
+      <li>这个工具把读取文件、复制粘贴等操作进行了自动化，达到一键设置的效果</li>
+    </ul>
+    <p>功能类似的工具在多年前就已经存在，只不过使用起来不太方便，功能也较简陋，所以我重做了一个。</p>
+    <img class="preview" src="https://user-images.githubusercontent.com/14357052/217746381-e0f74ca8-2377-417f-8030-6d751ed8788b.png" alt="预览">
+  </div>
+
+  <div class="section">
+    <h2>下载</h2>
+    <ul>
+      <li><a href="https://pan.baidu.com/s/10TI8L9N-89Cw8awIAjOuFg?pwd=9qva">百度网盘</a></li>
+      <li><a href="https://github.com/mintnick/eve-settings-manager/releases/tag/v1.0.1">GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>使用</h2>
+    <ul>
+      <li>左上角选择服务器，右上角选择语言</li>
+      <li>中间路径菜单会列出默认位置和名称的设置文件夹，如果你曾经在不同盘符安装过多个客户端，设置文件夹的位置可能会有所不同，你可以通过下面的“选择文件夹”按钮手动指定设置文件夹</li>
+      <li>“打开文件夹”会在资源管理器中打开对应文件夹，“备份”会在设置文件夹里创建一个子文件夹，并把设置文件复制进去，“清空缓存”用于清空角色列表里的角色名、备注等信息</li>
+      <li>在下面的角色/账号中，选择一个作为模版，然后在最下方“覆盖所有”或者“覆盖...”选择哪些对象会被覆盖</li>
+      <li>备注可以用来标注账号对应的邮箱、功能，因为账号的数字 ID 是无法通过 ESI 获取信息的</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>反馈</h2>
+    <ul>
+      <li>在 <a href="https://github.com/mintnick/eve-settings-manager">GitHub</a> 上提 issue</li>
+      <li>在  <a href="https://www.bilibili.com/video/BV14v4y1471d/?vd_source=c144d0d799ba176469dd16699d5ec4fb">B站视频下留言、私信</a> </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>支持</h2>
+    你可以通过以下方式表达支持：
+    <ul>
+      <li>把这个工具分享给更多人</li>
+      <li>在 GitHub 上给个 star </li>
+      <li>
+        <div>通过<b>支付宝</b>捐赠</div>
+        <img src="alipay.jpg" class="qrcode">
+      </li>
+    </ul>
+  </div>
+</body>
 </html>
