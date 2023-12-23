@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'NotoSansSC';
+  src: URL('./Noto_Sans_SC/NotoSansSC-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  font-family: 'NotoSansSC', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-variation-settings: 'wght' 400;
+  color: #616161;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 1% 5%;
+  display: grid;
+}
+
+h1, h2 {
+  color: black;
+}
+
+h1 {
+  font-variation-settings: 'wght' 600;
+}
+
+h2 {
+  font-variation-settings: 'wght' 500;
+}
+
+img {
+  height: 80px;
+}
+
+#header {
+  display: grid;
+  justify-content: center;
+}
+
+#header > img {
+  margin: auto;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-bottom: 10px;
+}
+
+.section :first-child {
+  grid-column: 1 / -1;
+}
+
+.section > div {
+  display: flex;
+  align-items: center;
+}
