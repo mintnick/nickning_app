@@ -16,8 +16,11 @@
 }
 
 body {
-  padding: 1% 5%;
+  max-width: 960px;
+  padding: 1%;
+  margin: auto;
   display: grid;
+
 }
 
 a {
@@ -48,6 +51,11 @@ img {
   height: 80px;
 }
 
+hr {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
 #header {
   display: grid;
   justify-content: center;
@@ -63,13 +71,21 @@ img {
   margin-bottom: 20px;
 }
 
-.section :first-child {
+.section-title {
   grid-column: 1 / -1;
   display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.section > .item {
+.item {
   margin: 15px 5px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.item:hover {
+  background-color: #EEEEEE;
 }
 
 .item > * {
@@ -78,6 +94,7 @@ img {
 
 .item :first-child {
   display: flex;
+  gap: 10px;
 }
 
 .item :first-child > img {
