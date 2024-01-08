@@ -16,11 +16,10 @@
 }
 
 body {
-  max-width: 960px;
-  padding: 1%;
-  margin: auto;
-  display: grid;
-
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 a {
@@ -56,47 +55,9 @@ hr {
   margin-bottom: 20px;
 }
 
-#header {
-  display: grid;
-  justify-content: center;
-}
-
-#header > img {
-  margin: auto;
-}
-
-.section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 20px;
-}
-
-.section-title {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.item {
-  margin: 15px 5px;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.item:hover {
-  background-color: #EEEEEE;
-}
-
-.item > * {
-  margin: 0;
-}
-
-.item :first-child {
-  display: flex;
-  gap: 10px;
-}
-
-.item :first-child > img {
-  height: 60px;
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
