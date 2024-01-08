@@ -1,3 +1,9 @@
 {
-  "site_title": "things i made"
+  "site_title": "things i made",
+
+  
+  "eve-online": "EVE Online stuff",
+
+  "eve-at-draft": "EVE AT Draft",
+  "eve-at-draft-desc": "Alliance Tournament online drafting tool"
 }
