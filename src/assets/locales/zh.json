@@ -1,0 +1,41 @@
+{
+  "site_title": "我做的东西",
+
+  "donate": "捐赠",
+  "donate-1": "欢迎通过捐赠的方式支持",
+  "donate-2": "我的项目",
+  "donate-3": "，它们大多数都是开源、免费使用并且无广告的。你的支持可以帮助这些项目的延续，谢谢！",
+
+
+  "eve-online": "星战前夜相关",
+
+  "eve-at-draft": "EVE AT 阵容模拟",
+  "eve-at-draft-desc": "在线模拟联盟赛阵容",
+
+  "esm": "EVE 设置管理",
+  "esm-desc": "一键同步角色和账号设置",
+
+  "campaigns": "EVE 增强表",
+  "campaigns-desc": "追踪主权和基础设置增强",
+
+  "evehu": "EVE 户",
+  "evehu-desc": "国服 EVEWho",
+
+
+  "chrome": "Chrome 插件",
+
+  "xyzdl": "小宇宙下载助手",
+  "xyzdl-desc": "在小宇宙网页上增加下载按钮",
+
+
+  "writing": "写作",
+  
+  "blog": "博客",
+  "blog-desc": "码字的地方",
+  
+  "douban": "豆瓣",
+  "douban-desc": "书影音记录、评论",
+
+  "bili": "哔哩哔哩",
+  "bili-desc": "一些游戏视频"
+}

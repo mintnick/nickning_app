@@ -1,0 +1,41 @@
+{
+  "site_title": "things i made",
+
+  "donate": "Donate",
+  "donate-1": "You can make a donation to support ",
+  "donate-2": "my work",
+  "donate-3": ", most of my projects are open-sourced, free to use and ads-free. Your support can help me to continue developing and maintaining them. Thank you!",
+
+  
+  "eve-online": "EVE Online stuff",
+
+  "eve-at-draft": "EVE AT Draft",
+  "eve-at-draft-desc": "Alliance Tournament online drafting tool",
+
+  "esm": "EVE Settings Manager",
+  "esm-desc": "Align settings between characters and accounts",
+
+  "campaigns": "EVE campaigns",
+  "campaigns-desc": "Track upcoming and ongoing campaigns",
+
+  "evehu": "EVEHu",
+  "evehu-desc": "An EVEWho copy for serenity server",
+
+
+  "chrome": "Chrome Extensions",
+
+  "xyzdl": "XiaoYuZhou Downloader",
+  "xyzdl-desc": "Add a download button on XiaoYuZhou (aka Cosmos, a Chinese podcast mobile app) web page",
+
+
+  "writing": "Writing",
+  
+  "blog": "Blog",
+  "blog-desc": "Me writing (in Chinese)",
+  
+  "douban": "Douban",
+  "douban-desc": "Reviews",
+
+  "bili": "Bilibili",
+  "bili-desc": "Videos"
+}
