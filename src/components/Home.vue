@@ -47,9 +47,37 @@ const projects = [
   },
 ];
 
+const social_links = [
+  {
+    "name" : "GitHub",
+    "logo" : "github.svg",
+    "url" : "https://github.com/mintnick",
+  },
+  {
+    "name" : "blog",
+    "logo" : "blog_logo.png",
+    "url" : "https://nickning.me",
+  },
+  {
+    "name" : "douban",
+    "logo" : "douban_logo.png",
+    "url" : "https://douban.com/people/MintNick",
+  },
+  {
+    "name" : "bili",
+    "logo" : "bili_icon.png",
+    "url" : "https://space.bilibili.com/8103",
+  },
+  {
+    "name" : "donate",
+    "logo" : "donate.svg",
+    "url" : "/donate/",
+  },
+];
+
 import { useRouter, useRoute } from 'vue-router'
 const router = useRouter();
-// const route = useRoute();
+const route = useRoute();
 
 function openUrl(url) {
   if (url.startsWith('http')) {
@@ -61,36 +89,31 @@ function openUrl(url) {
 </script>
 
 <template>
-  <div id="header">
-    <p class="text-h4">{{ $t('site_title') }}</p>
-    <div id="social-links">
-      <a href="https://space.bilibili.com/8103" target="_blank">
-        <img src="/images/logos/github.svg" />GitHub</a>
-      <a href="https://nickning.me" target="_blank">
-        <img src="/images/logos/blog_logo.png" />{{ $t("blog") }}</a>
-      <a href="https://douban.com/people/MintNick" target="_blank">
-        <img src="/images/logos/douban_logo.png" />{{ $t("douban") }}</a>
-      <a href="https://space.bilibili.com/8103" target="_blank">
-        <img src="/images/logos/bili_icon.png" />{{ $t("bili") }}</a>
-      <a href="/donate/">
-        <img src="/images/logos/donate.svg" />{{ $t("donate") }}</a>
+  <div>
+    <p class="text-h4 text-center text-medium-emphasis">{{ $t('site_title') }}</p>
+    <div id="social-links" class="d-flex justify-center mt-3">
+      <div v-for="link in social_links" class="mr-3">
+        <a :href="link.url" target="_blank" class="d-flex align-center">
+        <img :src="`images/logos/${link.logo}`" />{{ $t(link.name) }}</a>
+      </div>
     </div>
   </div>
+
   <hr>
 
-  <div v-for="project in projects">
-    <div class="row flex-center q-my-md">
+  <div v-for="project in projects" class="mt-5">
+    <div class="d-flex justify-center align-center">
       <img :src="`/images/logos/${project.section_logo}`" class="section-title-img"/>
       <div class="text-h4">{{ $t(project.section_name) }}</div>
     </div>
 
-    <div class="row wrap">
-      <button v-for="item in project.items" @click="openUrl(item.item_url)" class="col-sm-12 col-md-6 item">
-        <div class="row justify-start items-center no-wrap">
-          <img :src="`/images/logos/${item.item_logo}`" class="col-auto item-img q-mr-sm"/>
-          <div class="col-auto text-h5">{{ $t(item.item_name) }}</div>
+    <div class="d-flex">
+      <button v-for="item in project.items" @click="openUrl(item.item_url)" class="flex-1-0 flex-sm-1-1-100">
+        <div class="">
+          <img :src="`/images/logos/${item.item_logo}`" class="item-img"/>
+          <div class="">{{ $t(item.item_name) }}</div>
         </div>
-        <p class="text-left text-subtitle1">{{ $t(item.item_description) }}</p>
+        <p class="">{{ $t(item.item_description) }}</p>
       </button>
     </div>
   </div>
@@ -98,39 +121,12 @@ function openUrl(url) {
 </template>
 
 <style scoped>
-#social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 1em;
-}
-
-#social-links img{
+#social-links img {
   height: 30px;
 }
 
-#social-links > * {
-  display: flex;
-  align-items: center;
-  gap: 1px;
-}
-
 .section-title-img {
-  height: 60px;
-}
-
-.item {
-  background-color: white;
-  border-style: solid;
-  border-color: #ECEFF1;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.item:hover {
-  color: #CE93D8;
+  height: 60px
 }
 
 .item-img {

@@ -1,6 +1,11 @@
 {
   "site_title": "我做的东西",
 
+  "GitHub": "GitHub",
+  "blog": "博客",
+  "douban": "豆瓣",
+  "bili": "哔哩哔哩",
+
   "donate": "捐赠",
   "donate-1": "欢迎通过捐赠的方式支持",
   "donate-2": "我的项目",
@@ -25,17 +30,5 @@
   "chrome": "Chrome 插件",
 
   "xyzdl": "小宇宙下载助手",
-  "xyzdl-desc": "在小宇宙网页上增加下载按钮",
-
-
-  "writing": "写作",
-  
-  "blog": "博客",
-  "blog-desc": "码字的地方",
-  
-  "douban": "豆瓣",
-  "douban-desc": "书影音记录、评论",
-
-  "bili": "哔哩哔哩",
-  "bili-desc": "一些游戏视频"
+  "xyzdl-desc": "在小宇宙网页上增加下载按钮"
 }

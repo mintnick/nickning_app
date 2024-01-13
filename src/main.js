@@ -52,7 +52,9 @@ const router = createRouter({
 // vue-cookies
 import VueCookies from 'vue-cookies';
 
+import './assets/style.css'
+
 app.use(i18n);
-app.use(i18n);
+app.use(router);
 app.use(VueCookies, { expires: '1y' } );
 app.mount('#app')

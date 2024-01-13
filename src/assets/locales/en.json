@@ -1,6 +1,11 @@
 {
   "site_title": "things i made",
 
+  "GitHub": "GitHub",
+  "blog": "Blog",
+  "douban": "Douban",
+  "bili": "Bilibili",
+
   "donate": "Donate",
   "donate-1": "You can make a donation to support ",
   "donate-2": "my work",
@@ -25,17 +30,5 @@
   "chrome": "Chrome Extensions",
 
   "xyzdl": "XiaoYuZhou Downloader",
-  "xyzdl-desc": "Add a download button on XiaoYuZhou (aka Cosmos, a Chinese podcast mobile app) web page",
-
-
-  "writing": "Writing",
-  
-  "blog": "Blog",
-  "blog-desc": "Me writing (in Chinese)",
-  
-  "douban": "Douban",
-  "douban-desc": "Reviews",
-
-  "bili": "Bilibili",
-  "bili-desc": "Videos"
+  "xyzdl-desc": "Add a download button on XiaoYuZhou (aka Cosmos, a Chinese podcast mobile app) web page"
 }
