@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <div class="d-flex flex-column justify-center align-center">
-        <div class="mt-4">
+        <div>
           <v-btn class="mr-2" variant="outlined" @click="change_lang('en')">English</v-btn>
           <v-btn class="ml-2" variant="outlined" @click="change_lang('zh')">简体中文</v-btn>
         </div>

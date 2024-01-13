@@ -7,10 +7,14 @@
   "bili": "Bilibili",
 
   "donate": "Donate",
-  "donate-1": "You can make a donation to support ",
+  "donate-1": "If you like ",
   "donate-2": "my work",
-  "donate-3": ", most of my projects are open-sourced, free to use and ads-free. Your support can help me to continue developing and maintaining them. Thank you!",
+  "donate-3": ", maybe consider to make a donation. Most of them are free, open-sourced and ads-free.",
+  "donate-4": "Thank you for your support!",
 
+  "alipay": "Alipay",
+  "wechat": "WeChat",
+  "patreon": "Patreon",
   
   "eve-online": "EVE Online stuff",
 
