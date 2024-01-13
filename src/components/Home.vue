@@ -1,4 +1,8 @@
 <script setup>
+import { useRouter, useRoute } from 'vue-router'
+import { computed } from 'vue'
+import { useDisplay } from 'vuetify'
+
 const projects = [
   {
     // EVE Online
@@ -75,17 +79,22 @@ const social_links = [
   },
 ];
 
-import { useRouter, useRoute } from 'vue-router'
-const router = useRouter();
-const route = useRoute();
+// const router = useRouter();
+// const route = useRoute();
 
-function openUrl(url) {
-  if (url.startsWith('http')) {
-    window.open(url, '_blank').focus();
-  } else {
-    router.push(url);
-  }
-}
+// function openUrl(url) {
+//   if (url.startsWith('http')) {
+//     window.open(url, '_blank').focus();
+//   } else {
+//     router.push(url);
+//   }
+// }
+
+const { name } = useDisplay();
+const col = computed(() => {
+  if (name.value == 'xs') return 12;
+  return 6;
+});
 </script>
 
 <template>
@@ -94,7 +103,7 @@ function openUrl(url) {
     <div id="social-links" class="d-flex justify-center mt-3">
       <div v-for="link in social_links" class="mr-3">
         <a :href="link.url" target="_blank" class="d-flex align-center">
-        <img :src="`images/logos/${link.logo}`" />{{ $t(link.name) }}</a>
+        <img :src="`images/logos/${link.logo}`" class="d-none d-sm-flex mr-1" />{{ $t(link.name) }}</a>
       </div>
     </div>
   </div>
@@ -102,19 +111,21 @@ function openUrl(url) {
   <hr>
 
   <div v-for="project in projects" class="mt-5">
-    <div class="d-flex justify-center align-center">
+    <div class="d-flex justify-center align-center mb-3">
       <img :src="`/images/logos/${project.section_logo}`" class="section-title-img"/>
       <div class="text-h4">{{ $t(project.section_name) }}</div>
     </div>
 
-    <div class="d-flex">
-      <button v-for="item in project.items" @click="openUrl(item.item_url)" class="flex-1-0 flex-sm-1-1-100">
-        <div class="">
-          <img :src="`/images/logos/${item.item_logo}`" class="item-img"/>
-          <div class="">{{ $t(item.item_name) }}</div>
-        </div>
-        <p class="">{{ $t(item.item_description) }}</p>
-      </button>
+    <div class="d-flex flex-wrap">
+      <v-col :cols="col" v-for="item in project.items" >
+        <v-card variant="elevated" hover :href="item.item_url" target="_blank" class="item pa-3 h-100">
+          <div class="d-flex justify-center align-center font-weight-bold mb-3">
+            <img :src="`/images/logos/${item.item_logo}`" class="item-img mr-3"/>
+            <div class="">{{ $t(item.item_name) }}</div>
+          </div>
+          <p class="">{{ $t(item.item_description) }}</p>
+        </v-card>
+      </v-col>
     </div>
   </div>
 
@@ -127,6 +138,10 @@ function openUrl(url) {
 
 .section-title-img {
   height: 60px
+}
+
+.item {
+  cursor: pointer;
 }
 
 .item-img {
