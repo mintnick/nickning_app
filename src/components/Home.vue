@@ -102,7 +102,7 @@ const col = computed(() => {
     <p class="text-h4 text-center text-medium-emphasis">{{ $t('site_title') }}</p>
     <div id="social-links" class="d-flex justify-center mt-3">
       <div v-for="link in social_links" class="mr-3">
-        <a :href="link.url" target="_blank" class="d-flex align-center">
+        <a :href="link.url" :target="link.url.startsWith('http') ? '_blank': '_self'" class="d-flex align-center">
         <img :src="`images/logos/${link.logo}`" class="d-none d-sm-flex mr-1" />{{ $t(link.name) }}</a>
       </div>
     </div>
