@@ -1,54 +1,55 @@
 <script setup>
-import { useRouter, useRoute } from 'vue-router'
 import { computed } from 'vue'
 import { useDisplay } from 'vuetify'
+import { url_target } from '../assets/utils'
+
+const tags = [
+  {
+    "name": "eve-online",
+    "logo": "eve_online.png"
+  },
+  {
+    "name": "chrome",
+    "logo": "chrome-extensions.png",
+  }
+]
 
 const projects = [
   {
-    // EVE Online
-    "section_name": "eve-online",
-    "section_logo": "eve_online.png",
-    "items": [
-      {
-        "item_name": "eve-at-draft",
-        "item_logo": "atdraft_logo_red.png",
-        "item_url": "https://nickning.app/atdraft/",
-        "item_description": "eve-at-draft-desc"
-      },
-      {
-        "item_name": "esm",
-        "item_logo": "esm_logo.png",
-        "item_url": "/esm/",
-        "item_description": "esm-desc"
-      },
-      {
-        "item_name": "campaigns",
-        "item_logo": "campaigns_logo.svg",
-        "item_url": "https://nickning.app/campaigns/",
-        "item_description": "campaigns-desc"
-      },
-      // {
-      //   "item_name": "evehu",
-      //   "item_logo": "evehu_logo.svg",
-      //   "item_url": "https://nickning.app/evehu/",
-      //   "item_description": "evehu-desc",
-      // }
-    ]
+    "name": "eve-at-draft",
+    "logo": "atdraft_logo_red.png",
+    "url": "https://nickning.app/atdraft/",
+    "description": "eve-at-draft-desc",
+    "tags": ["eve-online"]
   },
-
-  // Chrome extensions
   {
-    "section_name": "chrome",
-    "section_logo": "chrome-extensions.png",
-    "items": [
-      {
-        "item_name": "xyzdl",
-        "item_logo": "xyzdl_logo.png",
-        "item_url": "/xyzdl/",
-        "item_description": "xyzdl-desc"
-      }
-    ]
+    "name": "esm",
+    "logo": "esm_logo.png",
+    "url": "/esm/",
+    "description": "esm-desc",
+    "tags": ["eve-online"]
   },
+  {
+    "name": "campaigns",
+    "logo": "campaigns_logo.svg",
+    "url": "https://nickning.app/campaigns/",
+    "description": "campaigns-desc",
+    "tags": ["eve-online"]
+  },
+  // {
+  //   "name": "evehu",
+  //   "logo": "evehu_logo.svg",
+  //   "url": "https://nickning.app/evehu/",
+  //   "description": "evehu-desc",
+  // }
+
+  {
+    "name": "xyzdl",
+    "logo": "xyzdl_logo.png",
+    "url": "/xyzdl/",
+    "description": "xyzdl-desc",
+    "tags": ["chrome"]
+  }
 ];
 
 const social_links = [
@@ -102,7 +103,7 @@ const col = computed(() => {
     <p class="text-h4 text-center text-medium-emphasis">{{ $t('site_title') }}</p>
     <div id="social-links" class="d-flex justify-center mt-3">
       <div v-for="link in social_links" class="mr-3">
-        <a :href="link.url" :target="link.url.startsWith('http') ? '_blank': '_self'" class="d-flex align-center">
+        <a :href="link.url" :target="url_target(link.url)" class="d-flex align-center">
         <img :src="`images/logos/${link.logo}`" class="d-none d-sm-flex mr-1" />{{ $t(link.name) }}</a>
       </div>
     </div>
@@ -110,20 +111,20 @@ const col = computed(() => {
 
   <hr>
 
-  <div v-for="project in projects" class="mt-5">
+  <div v-for="tag in tags">
     <div class="d-flex justify-center align-center mb-3">
-      <img :src="`/images/logos/${project.section_logo}`" class="section-title-img"/>
-      <div class="text-h4">{{ $t(project.section_name) }}</div>
+      <img :src="`/images/logos/${tag.logo}`" class="section-title-img"/>
+      <div class="text-h4">{{ $t(tag.name) }}</div>
     </div>
 
     <div class="d-flex flex-wrap">
-      <v-col :cols="col" v-for="item in project.items" >
-        <v-card variant="elevated" hover :href="item.item_url" target="_blank" class="item pa-3 h-100">
+      <v-col :cols="col" v-for="project in projects.filter(p => p.tags.includes(tag.name))">
+        <v-card variant="elevated" hover :href="project.url" :target="url_target(project.url)" class="item pa-3 h-100">
           <div class="d-flex justify-center align-center font-weight-bold mb-3">
-            <img :src="`/images/logos/${item.item_logo}`" class="item-img mr-3"/>
-            <div class="">{{ $t(item.item_name) }}</div>
+            <img :src="`/images/logos/${project.logo}`" class="item-img mr-3"/>
+            <div class="">{{ $t(project.name) }}</div>
           </div>
-          <p class="">{{ $t(item.item_description) }}</p>
+          <p class="">{{ $t(project.description) }}</p>
         </v-card>
       </v-col>
     </div>

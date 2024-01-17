@@ -31,9 +31,13 @@
   "evehu": "EVEHu",
   "evehu-desc": "An EVEWho copy for serenity server",
 
-
   "chrome": "Chrome Extensions",
 
   "xyzdl": "XiaoYuZhou Downloader",
-  "xyzdl-desc": "Add a download button on XiaoYuZhou (aka Cosmos, a Chinese podcast mobile app) web page"
+  "xyzdl-desc": "Add a download button on XiaoYuZhou (aka Cosmos, a Chinese podcast mobile app) web page",
+
+  "intro": "Introduction",
+  "download": "Download",
+  "usage": "Usage",
+  "support": "Support"
 }

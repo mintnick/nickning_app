@@ -36,8 +36,8 @@ const i18n = createI18n({
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './components/Home.vue'
 import ESM from './components/ESM.vue'
-import PageNotFound from './components/PageNotFound.vue'
 import Donate from './components/Donate.vue'
+import PageNotFound from './components/PageNotFound.vue'
 const routes = [
   { path: '/', component: Home },
   { path: '/esm', name: 'ESM', component: ESM },
@@ -52,6 +52,7 @@ const router = createRouter({
 // vue-cookies
 import VueCookies from 'vue-cookies';
 
+// css
 import './assets/style.css'
 
 app.use(i18n);
