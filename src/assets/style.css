@@ -1,6 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #424242;
+  font-size: 16px;
 }
 
 #app {
@@ -16,6 +17,10 @@ hr {
 a {
   text-decoration: none;
   color: #424242;
+}
+
+ul {
+  padding-left: 2em;
 }
 
 .title-img {
