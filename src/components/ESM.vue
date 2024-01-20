@@ -23,11 +23,6 @@ const url_esam = 'https://github.com/mintnick/ESAM';
     {{ $t('more') }}
     <a :href="url" class="highlight">GitHub page</a>
 
-    <h2>{{ $t('other-versions') }}</h2>
-    <a :href="url_esam" class="highlight">ESAM</a>
-    <br />
-    {{ $t('esm-5') }}
-
     <h2><a href="/donate/" class="highlight">{{ $t('donate') }}</a></h2>
   </div>
 </template>

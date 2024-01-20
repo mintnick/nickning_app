@@ -32,8 +32,8 @@ const payments = [
   <div class="text-h5">
     <p>{{ $t("donate-1") }}
       <a href="/" target="_blank" class="highlight">{{ $t("donate-2") }}</a>
+      {{ $t("donate-3") }}
     </p>
-    <p>{{ $t("donate-3") }}</p>
     <p>{{ $t("donate-4") }}</p>
   </div>
 

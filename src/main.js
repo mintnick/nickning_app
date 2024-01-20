@@ -37,11 +37,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from './components/Home.vue'
 import ESM from './components/ESM.vue'
 import Donate from './components/Donate.vue'
+import XYZ from './components/Xyzdl.vue'
 import PageNotFound from './components/PageNotFound.vue'
 const routes = [
   { path: '/', component: Home },
   { path: '/esm', name: 'ESM', component: ESM },
   { path: '/donate', name: 'Donate', component: Donate },
+  { path: '/xyzdl', name: 'Xyzdl', component: XYZ },
   { path: '/:pathMatch(.*)*', component: PageNotFound }
 ]
 const router = createRouter({

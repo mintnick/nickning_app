@@ -7,10 +7,10 @@
   "bili": "Bilibili",
 
   "donate": "Donate",
-  "donate-1": "You support helps me focusing on ",
+  "donate-1": "You donation helps me focusing on ",
   "donate-2": "my work",
-  "donate-3": "Most of them are free and open-sourced.",
-  "donate-4": "Thank you!",
+  "donate-3": ", most of them are free and open-sourced.",
+  "donate-4": "Thank you for your support!",
 
   "alipay": "Alipay",
   "wechat": "WeChat",
@@ -46,5 +46,5 @@
   "esm-2": "Backup setting files",
   "esm-3": "If you installed client in different places before, you may have multiple setting folders on your machine, use \"Select Folder\" to locate the one you are using",
   "esm-4": "Not all data would be copied, eg. channel password",
-  "esm-5": "Previous versions are made with Python, which have fundamental features to overwrite setting files. They also have smaller file size."
+  "esm-5": "Previous versions only support Chinese, which have fundamental features. They also have smaller file size."
 }
