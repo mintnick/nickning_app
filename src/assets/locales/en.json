@@ -39,5 +39,10 @@
   "intro": "Introduction",
   "download": "Download",
   "support": "Support",
-  "baidu": "Baidu Disk"
+  "more": "For more information, see ",
+
+  "esm-1": "Select a base profile, overwrite characters and accounts settings",
+  "esm-2": "Backup setting files",
+  "esm-3": "If you installed client in different places before, you may have multiple setting folders on your machine, use \"Select Folder\" to locate the one you are using",
+  "esm-4": "Not all data would be copied, eg. channel password"
 }

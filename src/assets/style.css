@@ -23,6 +23,10 @@ ul {
   padding-left: 2em;
 }
 
+h2 {
+  margin-top: 10px;
+}
+
 .title-img {
   height: 40px;
 }
@@ -30,4 +34,8 @@ ul {
 .highlight {
   color: #3F51B5;
   text-decoration: underline;
+}
+
+img.screenshot {
+  height: 500px;
 }
