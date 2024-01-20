@@ -19,7 +19,7 @@ a {
   color: #424242;
 }
 
-ul {
+ul, ol {
   padding-left: 2em;
 }
 

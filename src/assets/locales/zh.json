@@ -5,6 +5,7 @@
   "blog": "博客",
   "douban": "豆瓣",
   "bili": "哔哩哔哩",
+  "chrome-store": "Chrome 应用商店",
 
   "donate": "捐赠",
   "donate-1": "欢迎通过捐赠的方式支持",
@@ -38,6 +39,7 @@
 
   "intro": "介绍",
   "download": "下载",
+  "install": "安装",
   "support": "支持",
   "more": "更多信息，见 ",
   "other-versions": "其它版本",

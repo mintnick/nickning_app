@@ -28,5 +28,4 @@ const url_esam = 'https://github.com/mintnick/ESAM';
 </template>
 
 <style scoped>
-
 </style>
