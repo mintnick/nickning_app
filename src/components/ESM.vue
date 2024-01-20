@@ -1,8 +1,12 @@
 <script setup>
+import { change_favicon } from './../assets/utils'
+
 const url_github = 'https://github.com/mintnick/eve-settings-manager/releases/tag/v1.0.1';
 const url_baidu = 'https://pan.baidu.com/s/10TI8L9N-89Cw8awIAjOuFg?pwd=9qva';
 const url = 'https://github.com/mintnick/eve-settings-manager';
-const url_esam = 'https://github.com/mintnick/ESAM';
+
+document.title = "EVE Settings Manager";
+change_favicon('/images/logos/esm_logo.png');
 </script>
 
 <template>

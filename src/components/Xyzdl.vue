@@ -1,6 +1,10 @@
 <script setup>
+import { change_favicon } from './../assets/utils'
 const url_chrome = 'https://chromewebstore.google.com/detail/%E5%B0%8F%E5%AE%87%E5%AE%99%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B/dflnffddmglhmnlnhlpoiccomjokgnnf';
 const url_baidu = 'https://pan.baidu.com/s/1nVGrVbLj4HuERa6d3We1hA?pwd=25tb';
+
+document.title = "小宇宙下载助手";
+change_favicon('/images/logos/xyzdl_logo.png');
 </script>
 
 <template>
