@@ -40,9 +40,11 @@
   "download": "Download",
   "support": "Support",
   "more": "For more information, see ",
+  "other-versions": "Other versions",
 
   "esm-1": "Select a base profile, overwrite characters and accounts settings",
   "esm-2": "Backup setting files",
   "esm-3": "If you installed client in different places before, you may have multiple setting folders on your machine, use \"Select Folder\" to locate the one you are using",
-  "esm-4": "Not all data would be copied, eg. channel password"
+  "esm-4": "Not all data would be copied, eg. channel password",
+  "esm-5": "Previous versions are made with Python, which have fundamental features to overwrite setting files. They also have smaller file size."
 }

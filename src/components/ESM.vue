@@ -1,13 +1,13 @@
 <script setup>
 const url_github = 'https://github.com/mintnick/eve-settings-manager/releases/tag/v1.0.1';
 const url_baidu = 'https://pan.baidu.com/s/10TI8L9N-89Cw8awIAjOuFg?pwd=9qva';
-const url = 'https://github.com/mintnick/eve-settings-manager'
+const url = 'https://github.com/mintnick/eve-settings-manager';
+const url_esam = 'https://github.com/mintnick/ESAM';
 </script>
 
 <template>
   <div class="text-grey-darken-3">
     <h1 class="text-center">{{ $t('esm') }}</h1>
-    <div class="d-flex justify-center"><img src="/images/screenshots/esm.png" class="screenshot"/></div>
     <h2>{{ $t('download') }}</h2>
     <ul>
       <li><a :href="url_github" class="highlight">GitHub</a></li>
@@ -22,6 +22,12 @@ const url = 'https://github.com/mintnick/eve-settings-manager'
     </ul>
     {{ $t('more') }}
     <a :href="url" class="highlight">GitHub page</a>
+
+    <h2>{{ $t('other-versions') }}</h2>
+    <a :href="url_esam" class="highlight">ESAM</a>
+    <br />
+    {{ $t('esm-5') }}
+
     <h2><a href="/donate/" class="highlight">{{ $t('donate') }}</a></h2>
   </div>
 </template>
