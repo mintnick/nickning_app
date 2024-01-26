@@ -28,8 +28,13 @@ change_favicon('/images/logos/esm_logo.png');
     <a :href="url" class="highlight">GitHub page</a>
 
     <h2><a href="/donate/" class="highlight">{{ $t('donate') }}</a></h2>
+
+    <div class="d-flex justify-center">
+      <img src="/images/screenshots/esm.png" class="screenshot" />
+    </div>
   </div>
 </template>
 
 <style scoped>
+
 </style>

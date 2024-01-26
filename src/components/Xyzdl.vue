@@ -35,7 +35,7 @@ change_favicon('/images/logos/xyzdl_logo.png');
     <h2><a href="/donate/" class="highlight">捐赠支持</a></h2>
 
     <div class="d-flex justify-center">
-      <img src="/images/screenshots/xyzdl.png" />
+      <img src="/images/screenshots/xyzdl.png" class="screenshot"/>
     </div>
   </div>
 </template>

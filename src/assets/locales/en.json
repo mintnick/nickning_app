@@ -27,7 +27,7 @@
   "esm-desc": "Align settings between characters and accounts",
 
   "campaigns": "EVE campaigns",
-  "campaigns-desc": "Track upcoming and ongoing campaigns",
+  "campaigns-desc": "Track upcoming and ongoing campaigns on Serenity server",
 
   "evehu": "EVEHu",
   "evehu-desc": "An EVEWho copy for serenity server",
@@ -48,11 +48,5 @@
   "esm-2": "Backup setting files",
   "esm-3": "If you installed client in different places before, you may have multiple setting folders on your machine, use \"Select Folder\" to locate the one you are using",
   "esm-4": "Not all data would be copied, eg. channel password",
-  "esm-5": "Previous versions only support Chinese, which have fundamental features. They also have smaller file size.",
-
-  "xyzdl-1": "Chrome Web Store",
-  "xyzdl-2": "",
-  "xyzdl-3": "",
-  "xyzdl-4": "",
-  "xyzdl-5": ""
+  "esm-5": "Previous versions only support Chinese, which have fundamental features. They also have smaller file size."
 }
