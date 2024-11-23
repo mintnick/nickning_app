@@ -15,10 +15,17 @@ const tags = [
 ]
 
 const projects = [
+{
+    "name": "eve-hu",
+    "logo": "evehu_logo.png",
+    "url": "https://evehu.org",
+    "description": "eve-hu-desc",
+    "tags": ["eve-online"]
+  },
   {
     "name": "eve-at-draft",
     "logo": "atdraft_logo_red.png",
-    "url": "https://nickning.app/atdraft/",
+    "url": "https://atdraft.evehu.org",
     "description": "eve-at-draft-desc",
     "tags": ["eve-online"]
   },

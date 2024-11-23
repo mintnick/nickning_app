@@ -5,16 +5,6 @@ const tab = ref(null);
 
 const payments = [
   {
-    "value": "patreon",
-    "url": "patreon.com/nickning",
-    "color": "deep-purple-accent-4",
-  },
-  {
-    "value": "paypal",
-    "url": "https://www.paypal.com/paypalme/nickningapps",
-    "color": "#2385BB",
-  },
-  {
     "value": "alipay",
     "image": "alipay.JPG",
     "color": "#166CFF",

@@ -20,6 +20,9 @@
   
   "eve-online": "EVE Online stuff",
 
+  "eve-hu": "EVE Hu",
+  "eve-hu-desc": "Monitoring member count in Serenity and Infinity servers",
+
   "eve-at-draft": "EVE AT Draft",
   "eve-at-draft-desc": "Alliance Tournament online drafting tool",
 
