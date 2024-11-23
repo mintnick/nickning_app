@@ -39,16 +39,10 @@ const projects = [
   {
     "name": "campaigns",
     "logo": "campaigns_logo.svg",
-    "url": "https://nickning.app/campaigns/",
+    "url": "https://sov.evehu.org",
     "description": "campaigns-desc",
     "tags": ["eve-online"]
   },
-  // {
-  //   "name": "evehu",
-  //   "logo": "evehu_logo.svg",
-  //   "url": "https://nickning.app/evehu/",
-  //   "description": "evehu-desc",
-  // }
 
   {
     "name": "xyzdl",
@@ -86,17 +80,6 @@ const social_links = [
     "url" : "/donate/",
   },
 ];
-
-// const router = useRouter();
-// const route = useRoute();
-
-// function openUrl(url) {
-//   if (url.startsWith('http')) {
-//     window.open(url, '_blank').focus();
-//   } else {
-//     router.push(url);
-//   }
-// }
 
 const { name } = useDisplay();
 const col = computed(() => {
